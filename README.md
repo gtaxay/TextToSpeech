@@ -72,9 +72,9 @@ exports.handler = async (event) => {
 
 ## Testing
 
-{
-  "text": "Hello from AWS Polly!"
-}
+    {
+      "text": "Hello from AWS Polly!"
+    }
 
 ---
 
