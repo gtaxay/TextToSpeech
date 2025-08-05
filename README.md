@@ -107,13 +107,10 @@ exports.handler = async (event) => {
 
 ---
 
-## Example Input/Output
+## Example Input
 
 # Example Input
 
     {
 	"text":"Hi, I’m Gabe, just a guy who gave AWS a voice. You're listening to the result. "
     }
-# Example Output
-
-s3://polly-translate-storage/audio-1754432932465.mp3
