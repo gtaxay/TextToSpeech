@@ -79,23 +79,25 @@ exports.handler = async (event) => {
 ---
 
 ## Requirements
+
 - AWS Lambda (Node.js 18.x or later)
-- An S3 bucket (e.g., polly-translate-storage)
+- An S3 bucket (e.g., `polly-translate-storage`)
 - IAM role attached to the Lambda function with the following permissions:
 
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
     {
-      "Version": "2012-10-17",
-      "Statement": [
-        {
-          "Effect": "Allow",
-          "Action": [
-            "polly:SynthesizeSpeech",
-            "s3:PutObject"
-          ],
-          "Resource": "*"
-        }
-      ]
+      "Effect": "Allow",
+      "Action": [
+        "polly:SynthesizeSpeech",
+        "s3:PutObject"
+      ],
+      "Resource": "*"
     }
+  ]
+}
 
 ---
 
