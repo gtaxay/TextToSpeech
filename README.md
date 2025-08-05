@@ -69,11 +69,15 @@ exports.handler = async (event) => {
     }
 };
 
+---
+
 ## Testing
 
 {
   "text": "Hello from AWS Polly!"
 }
+
+---
 
 ## Requirements
 - AWS Lambda (Node.js 18.x or later)
@@ -93,6 +97,8 @@ exports.handler = async (event) => {
     }
   ]
 }
+
+---
 
 ## Libraries Used
 - @aws-sdk/client-polly
