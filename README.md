@@ -85,6 +85,7 @@ exports.handler = async (event) => {
 - IAM role attached to the Lambda function with the following permissions:
 
 
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -93,7 +94,7 @@ exports.handler = async (event) => {
       "Action": [
         "polly:SynthesizeSpeech",
         "s3:PutObject"
-      ]
+      ],
       "Resource": "*"
     }
   ]
