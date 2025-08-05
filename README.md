@@ -10,12 +10,21 @@ This project is built around serverless architecture using AWS services. It leve
 
 ---
 
+## Services Used
+
+- **Amazon Polly** – Turns text into realistic speech
+- **AWS S3** – Stores the audio files
+- **AWS Lambda** – Runs the code serverlessly
+- **AWS IAM** – Handles secure permissions
+
+---
+
 ## How It Works
 
-1. The Lambda function receives an event containing a `text` field.
-2. Amazon Polly converts the text into an `.mp3` audio stream.
-3. The audio stream is uploaded to a specified S3 bucket (`polly-translate-storage`) using the AWS SDK's streaming utility.
-4. A success response is returned with the filename of the uploaded audio.
+1. You send a request to the Lambda function with a `text` field.
+2. Polly takes the text and generates an `.mp3` audio stream.
+3. The audio stream is uploaded directly to your S3 bucket (`polly-translate-storage`).
+4. Lambda returns the filename of the audio file so you can grab it from S3.
 
 ---
 
