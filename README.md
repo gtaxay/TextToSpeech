@@ -109,8 +109,6 @@ exports.handler = async (event) => {
 
 ## Example Input
 
-# Example Input
-
     {
 	"text":"Hi, I’m Gabe, just a guy who gave AWS a voice. You're listening to the result. "
     }
