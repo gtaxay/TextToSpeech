@@ -116,4 +116,4 @@ exports.handler = async (event) => {
     }
 # Example Output
 
-https://polly-translate-storage.s3.us-east-2.amazonaws.com/audio-1754432932465.mp3
+s3://polly-translate-storage/audio-1754432932465.mp3
