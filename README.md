@@ -84,7 +84,7 @@ exports.handler = async (event) => {
 - An S3 bucket (e.g., `polly-translate-storage`)
 - IAM role attached to the Lambda function with the following permissions:
 
-```json
+
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -93,7 +93,7 @@ exports.handler = async (event) => {
       "Action": [
         "polly:SynthesizeSpeech",
         "s3:PutObject"
-      ],
+      ]
       "Resource": "*"
     }
   ]
