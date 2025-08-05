@@ -104,3 +104,16 @@ exports.handler = async (event) => {
 - @aws-sdk/client-polly
 - @aws-sdk/client-s3
 - @aws-sdk/lib-storage
+
+---
+
+## Example Input/Output
+
+# Example Input
+
+    {
+	"text":"Hi, I’m Gabe, just a guy who gave AWS a voice. You're listening to the result. "
+    }
+# Example Output
+
+https://polly-translate-storage.s3.us-east-2.amazonaws.com/audio-1754432932465.mp3
