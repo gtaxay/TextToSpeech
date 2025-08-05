@@ -21,7 +21,6 @@ This project is built around serverless architecture using AWS services. It leve
 
 ## Code
 
-```js
 const { PollyClient, SynthesizeSpeechCommand } = require("@aws-sdk/client-polly");
 const { S3Client } = require("@aws-sdk/client-s3");
 const { Upload } = require("@aws-sdk/lib-storage"); 
@@ -71,7 +70,7 @@ exports.handler = async (event) => {
 
 ---
 
-##Testing
+## Testing
 
 {
   "text": "Hello from AWS Polly!"
@@ -79,7 +78,7 @@ exports.handler = async (event) => {
 
 ---
 
-##Requirements
+## Requirements
 - AWS Lambda (Node.js 18.x or later)
 - An S3 bucket (e.g., polly-translate-storage)
 - IAM role attached to the Lambda function with the following permissions:
