@@ -30,7 +30,8 @@ This project is built around serverless architecture using AWS services. It leve
 
 ## Code
 
-const { PollyClient, SynthesizeSpeechCommand } = require("@aws-sdk/client-polly");
+
+>const { PollyClient, SynthesizeSpeechCommand } = require("@aws-sdk/client-polly");
 const { S3Client } = require("@aws-sdk/client-s3");
 const { Upload } = require("@aws-sdk/lib-storage"); 
 
@@ -75,7 +76,7 @@ exports.handler = async (event) => {
             body: JSON.stringify({ message: "Internal server error" }),
         };
     }
-};
+>};
 
 ---
 
