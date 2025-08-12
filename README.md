@@ -42,19 +42,25 @@ This project is built around serverless architecture using AWS services. It leve
 - An S3 bucket (e.g., `polly-translate-storage`)
 - IAM role attached to the Lambda function with the following permissions:
 
+```
 {
   "Version": "2012-10-17",
   "Statement": [
     {
+      "Sid": "PollySynthesizeSpeech",
       "Effect": "Allow",
-      "Action": [
-        "polly:SynthesizeSpeech",
-        "s3:PutObject"
-      ],
+      "Action": ["polly:SynthesizeSpeech"],
       "Resource": "*"
+    },
+    {
+      "Sid": "S3PutObjectToAppBucket",
+      "Effect": "Allow",
+      "Action": ["s3:PutObject"],
+      "Resource": "arn:aws:s3:::YOUR_BUCKET_NAME/*"
     }
   ]
 }
+```
 
 ---
 
